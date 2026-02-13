@@ -1,0 +1,11 @@
+[variables]
+    NODE_ENV = 'production'
+    NIXPACKS_PATH = '/app/node_modules/.bin' # Definición explícita sin autorreferencia
+
+[phases.install]
+    dependsOn = ['setup']
+    cmds = ['corepack enable && corepack prepare yarn@4.5.0 --activate && yarn install --immutable']
+
+[phases.build]
+    dependsOn = ['install']
+    cmds = ['cd strapi && yarn build']
