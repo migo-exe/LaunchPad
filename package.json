@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Next.js Launchpad Example powered by Strapi",
   "type": "module",
+  "workspaces": [
+    "next",
+    "strapi"
+  ],
   "scripts": {
     "prepare": "husky",
     "next": "yarn dev --prefix ../next/",

@@ -37,7 +37,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "LAUNCHPAD"
+    "uuid": "LAUNCHPAD-LOCAL-3a4854a7-45fe-41c3-8e57-b1c24b46913d"
   },
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
